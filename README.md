@@ -1,5 +1,5 @@
-## created to write and reffer the programs
+## Created to write and reffer the programs
 
-easy file
-medium file
-difficult file
+Easy file,
+Medium file,
+Difficult file
