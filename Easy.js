@@ -162,3 +162,14 @@ function swapnumber(){
         }
         
         swapnumber()    
+
+
+// wap tp print table of 2 
+function table(n){
+    let no =2
+  for (let i = 1; i <= n; i++) {
+   console.log(no*i)
+  }
+  }
+  
+  table(10)
