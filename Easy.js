@@ -173,3 +173,29 @@ function table(n){
   }
   
   table(10)
+
+//   wap to print the length of given string;
+
+function test(){
+    n = 'SHUBHA';
+    
+    console.log(n.length)
+    
+}
+test();
+
+// WAP to fetch tthe character from the given string;
+
+
+function test(){
+    n = 'JAVAMAVA';
+    str = "M";
+    index = 4;
+    char = ''
+for(let i=0; i<=index; i++){
+   char = n[i]
+    
+}
+  return char  
+}
+console.log(test())

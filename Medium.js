@@ -60,4 +60,71 @@ function primenumber(num){
       }
     }
     
-    primenumber(6)
+    primenumber(6);
+
+// WAP to convert string into uppercase;
+
+
+function string(){
+    let str = "shubha";
+    let upperCase = [];
+
+    for(let i=0; i< str.length; i++ ){
+        const charCode = str.charCodeAt(i);
+
+        if(charCode >= 97 && charCode <= 122){
+            upperCase.push(String.fromCharCode(charCode - 32));
+        }else{
+            upperCase.push(str[i]);
+        }
+    }
+    console.log(upperCase) 
+}
+
+string();
+
+// Wap to convert string to array;
+
+
+function test(){
+    n = 'SHUBHA'
+    const arr = Array.from(n)
+    // let arr =[];
+    // for(let i =0; i< n.length; i++){
+    //     arr.push(n[i])
+    // }
+   console.log(arr) 
+}
+test()
+
+// WAP to  fetch "amava" from "javamava";
+
+
+function subString(){
+  let startindex = 3;
+  let enddindex= 7;
+  let result = '';
+  let str = "JAVAMAVA"
+
+   for(let i = startindex; i<= enddindex; i++){
+    result += str[i]
+   }
+   console.log(result)
+}
+subString()
+
+
+// Reverse a string;
+
+function Reverse(){
+   
+   str = "shubha";
+   result = "";
+
+        for(let i = str.length - 1; i >= 0; i--){
+            result += str[i];
+        }
+            console.log(result)
+}
+
+Reverse()
