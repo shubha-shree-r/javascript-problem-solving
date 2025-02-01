@@ -1,15 +1,14 @@
 function alphabets(){
     let ch="A";
-    for(let i=1; i<=4;i++){
+    for(let i=1; i<=9;i++){
         let row = "";
-        for(let j=1; j<=4;j++){
+        for(let j=1; j<=9;j++){
             row += ch;
         ch = String.fromCharCode(ch.charCodeAt(0) + 1);
-        if (ch > "Z") {
-                ch = "A"; // Reset to "A" after "Z"
-            }
+        
         }
         console.log(row.trim())
+        ch = "A"
     }
 }
 alphabets() // A to Z
@@ -22,11 +21,10 @@ alphabets() // A to Z
 //         for(let j=1; j<=4;j++){
 //             row += ch;
 //         ch = String.fromCharCode(ch.charCodeAt(0) - 1);
-//         if (ch < "A") {
-//                 ch = "Z"; // Reset to "A" after "Z"
-//             }
+//        
 //         }
 //         console.log(row.trim())
+// ch = "Z"
 //     }
 // }
 // alphabets() // Z to A
