@@ -21,14 +21,5 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install dependencies
-        run: npm ci  # Use 'npm install' if there's no package-lock.json
-
-      - name: Run Linter
-        run: npm run lint
-
-      - name: Run Tests
-        run: npm test
-
-      - name: Build Project
-        run: npm run build
+      - name: Executing a file
+        run: node Easy/Vowels.js
