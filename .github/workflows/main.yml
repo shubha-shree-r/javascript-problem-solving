@@ -22,4 +22,4 @@ jobs:
           node-version: '20'
 
       - name: Executing a file
-        run: node Easy/Vowels.js
+        run: node Easy/Easy.js
