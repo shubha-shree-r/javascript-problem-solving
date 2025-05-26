@@ -1,0 +1,32 @@
+name: JavaScript CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Use Secret in Environment
+        env:
+          API_KEY: ${{ secrets.JAVASCRIPT_PROBLEM_KEY }}  # Correct usage
+        run: echo "Secret is set, but will not be displayed for security reasons."
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Executing a file
+        run: node easy/intProblems.js
+
+      
