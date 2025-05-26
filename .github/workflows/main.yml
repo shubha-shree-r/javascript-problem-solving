@@ -27,6 +27,6 @@ jobs:
           node-version: '20'
 
       - name: Executing a file
-        run: node Easy/Easy.js
+        run: node easy/intProblems.js
 
       
